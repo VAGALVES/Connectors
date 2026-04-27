@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0A1220" />
+
+<title>English Connectors & Compounds · VS Consulting</title>
+<meta name="description" content="Framework editorial de inglês intermediário-avançado: phrasal verbs, advérbios, conjunções, linking words e collocations curados por frequência COCA com áudio integrado." />
+<meta name="author" content="VS Consulting" />
+<meta name="keywords" content="phrasal verbs, advérbios, conjunções, linking words, collocations, inglês para brasileiros, COCA, IPA, vs consulting" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="English Connectors & Compounds · VS Consulting" />
+<meta property="og:description" content="A arquitetura conectiva do inglês — framework editorial com 370 entradas curadas por frequência COCA." />
+<meta property="og:image" content="og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:site_name" content="VS Consulting Linguistic Lab" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="English Connectors & Compounds · VS Consulting" />
+<meta name="twitter:description" content="Framework editorial com 370 entradas curadas." />
+<meta name="twitter:image" content="og-image.png" />
+
+<link rel="manifest" href="manifest.json" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Connectors" />
+
+<script>
+(function(){
+  try {
+    var saved = localStorage.getItem('connectors-theme');
+    var theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    if (theme === 'light') document.documentElement.classList.add('theme-light');
+  } catch(e) {}
+})();
+</script>
+
+<link rel="icon" type="image/png" sizes="32x32" href="icon-192.png" />
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+<link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink:#0A1220; --ink-2:#10192B; --ink-3:#18223A; --ink-4:#202C48;
+    --paper:#F5F1E8; --paper-80:rgba(245,241,232,0.82); --paper-60:rgba(245,241,232,0.58);
+    --paper-40:rgba(245,241,232,0.38); --paper-20:rgba(245,241,232,0.18);
+    --gold:#C9A35C; --gold-soft:rgba(201,163,92,0.12); --gold-line:rgba(201,163,92,0.28);
+    --line:rgba(245,241,232,0.08); --line-strong:rgba(245,241,232,0.16);
+
+    --sage:#7FA889;
+    --sage-soft:rgba(127,168,137,0.10);
+    --sage-line:rgba(127,168,137,0.32);
+    --amber:#C9A35C;
+    --amber-soft:rgba(201,163,92,0.10);
+    --amber-line:rgba(201,163,92,0.32);
+    --terra:#C77B5C;
+    --terra-soft:rgba(199,123,92,0.10);
+    --terra-line:rgba(199,123,92,0.32);
+
+    --font-display:'Fraunces',Georgia,serif;
+    --font-body:'Instrument Sans',system-ui,sans-serif;
+    --font-mono:'JetBrains Mono',ui-monospace,monospace;
+    --fs-3xs:0.6875rem; --fs-2xs:0.75rem; --fs-xs:0.8125rem; --fs-sm:0.9375rem;
+    --fs-base:clamp(0.9375rem,0.9rem + 0.2vw,1.0625rem);
+    --fs-lg:clamp(1rem,0.95rem + 0.4vw,1.15rem);
+    --fs-xl:clamp(1.125rem,1rem + 0.6vw,1.3125rem);
+    --fs-2xl:clamp(1.375rem,1.2rem + 0.8vw,1.75rem);
+    --fs-3xl:clamp(1.75rem,1.4rem + 1.6vw,2.5rem);
+    --fs-4xl:clamp(2.25rem,1.6rem + 3vw,3.5rem);
+    --fs-hero:clamp(2.625rem,2rem + 4.5vw,5rem);
+    --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-5:24px;
+    --sp-6:32px; --sp-7:48px; --sp-8:64px; --sp-9:96px;
+    --r-sm:8px; --r-md:14px; --r-lg:20px; --r-xl:28px;
+    --max-w:1240px; --gutter:clamp(1rem,4vw,2rem);
+    --ease-out:cubic-bezier(0.2,0.8,0.2,1);
+    --dur-fast:180ms; --dur-med:280ms;
+    --shadow-card:0 1px 0 rgba(245,241,232,0.04) inset, 0 30px 60px -30px rgba(0,0,0,0.5);
+    --topbar-bg:rgba(10,18,32,0.72);
+    --modal-backdrop:rgba(5,8,15,0.78);
+    --bg-elev-soft:rgba(245,241,232,0.03);
+    --bg-elev-softer:rgba(245,241,232,0.02);
+  }
+
+  html.theme-light {
+    --ink:#F5F1E8; --ink-2:#ECE6D6; --ink-3:#DDD5BD; --ink-4:#C5BCA0;
+    --paper:#0A1220; --paper-80:rgba(10,18,32,0.85); --paper-60:rgba(10,18,32,0.62);
+    --paper-40:rgba(10,18,32,0.42); --paper-20:rgba(10,18,32,0.18);
+    --gold:#8C6D2E; --gold-soft:rgba(140,109,46,0.10); --gold-line:rgba(140,109,46,0.30);
+    --line:rgba(10,18,32,0.08); --line-strong:rgba(10,18,32,0.16);
+    --sage:#3F6E55; --sage-soft:rgba(63,110,85,0.10); --sage-line:rgba(63,110,85,0.32);
+    --amber:#8C6D2E; --amber-soft:rgba(140,109,46,0.10); --amber-line:rgba(140,109,46,0.30);
+    --terra:#9A4D2D; --terra-soft:rgba(154,77,45,0.10); --terra-line:rgba(154,77,45,0.32);
+    --shadow-card:0 1px 0 rgba(255,255,255,0.6) inset, 0 20px 40px -20px rgba(10,18,32,0.15);
+    --topbar-bg:rgba(245,241,232,0.78);
+    --modal-backdrop:rgba(245,241,232,0.78);
+    --bg-elev-soft:rgba(10,18,32,0.04);
+    --bg-elev-softer:rgba(10,18,32,0.025);
+  }
+
+  html.theme-light body::before { opacity:0.18; mix-blend-mode:multiply }
+  html.theme-light body::after {
+    background:radial-gradient(circle at center,rgba(140,109,46,0.05) 0%,rgba(140,109,46,0.01) 30%,transparent 60%)
+  }
+
+  body, .topbar, .entry-card, .modal__panel, .modal__head, .modal__body,
+  .filter-chip, .module-tab, .audio-btn, .theme-toggle,
+  .modal__chip, .modal__compare, .modal__tip {
+    transition: background-color 320ms var(--ease-out), border-color 320ms var(--ease-out), color 280ms var(--ease-out);
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--ink);color:var(--paper-80);font-family:var(--font-body);
+    font-size:var(--fs-base);line-height:1.65;-webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;overflow-x:hidden}
+
+  button{background:transparent;border:none;color:inherit;font:inherit;
+    padding:0;margin:0;cursor:pointer;-webkit-appearance:none;appearance:none;
+    text-align:left;width:auto}
+
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;
+    opacity:0.28;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.35 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+  body::after{content:"";position:fixed;top:-30vh;left:50%;transform:translateX(-50%);
+    width:140vmin;height:140vmin;pointer-events:none;z-index:0;
+    background:radial-gradient(circle at center,rgba(201,163,92,0.07) 0%,rgba(201,163,92,0.02) 30%,transparent 60%)}
+
+  p{margin:0 0 var(--sp-4)}
+  h1,h2,h3,h4,h5{margin:0;color:var(--paper);font-family:var(--font-display);
+    font-weight:700;line-height:1.08;letter-spacing:-0.02em;
+    font-variation-settings:"opsz" 48,"SOFT" 50}
+  h1{font-size:var(--fs-hero);font-weight:900;letter-spacing:-0.03em;
+    font-variation-settings:"opsz" 144,"SOFT" 40}
+  h2{font-size:var(--fs-4xl)} h3{font-size:var(--fs-2xl);font-weight:600}
+  h4{font-size:var(--fs-xl);font-weight:600}
+  em,.italic{font-style:italic;color:var(--gold);font-variation-settings:"opsz" 144,"SOFT" 100}
+  strong{color:var(--paper);font-weight:600}
+  .eyebrow{font-family:var(--font-mono);font-size:var(--fs-2xs);font-weight:500;
+    letter-spacing:0.18em;text-transform:uppercase;color:var(--paper-60)}
+  .wrap{width:100%;max-width:var(--max-w);margin-inline:auto;
+    padding-inline:var(--gutter);position:relative;z-index:2}
+  :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+
+  .progress{position:fixed;top:0;left:0;height:2px;width:0%;
+    background:linear-gradient(90deg,var(--gold),#E0C28E);z-index:50;
+    transition:width 80ms linear;pointer-events:none}
+
+  /* ─── TOPBAR ─── */
+  .topbar{position:sticky;top:0;z-index:40;background:var(--topbar-bg);
+    backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);
+    border-bottom:1px solid var(--line)}
+  .topbar__inner{display:flex;align-items:center;justify-content:space-between;
+    gap:var(--sp-4);padding-block:var(--sp-4)}
+  .brand{display:flex;align-items:center;gap:var(--sp-3);min-width:0}
+  .brand__mark{width:32px;height:32px;border-radius:var(--r-sm);
+    border:1px solid var(--gold-line);background:var(--gold-soft);
+    display:grid;place-items:center;font-family:var(--font-display);
+    font-weight:900;font-size:12px;color:var(--gold);flex-shrink:0;font-style:italic}
+  .brand__text{display:flex;flex-direction:column;min-width:0}
+  .brand__kicker{font-family:var(--font-mono);font-size:var(--fs-3xs);
+    letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);
+    line-height:1;margin-bottom:3px}
+  .brand__name{font-family:var(--font-display);font-size:var(--fs-sm);
+    font-weight:600;color:var(--paper);line-height:1.2;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+  .topbar__actions{display:flex;align-items:center;gap:var(--sp-3)}
+  .theme-toggle{width:38px;height:38px;border-radius:50%;
+    border:1px solid var(--line-strong);background:transparent;color:var(--paper);
+    display:grid;place-items:center;cursor:pointer;position:relative;overflow:hidden;
+    flex-shrink:0}
+  .theme-toggle:hover{border-color:var(--gold);color:var(--gold)}
+  .theme-toggle__icon{width:16px;height:16px;position:absolute;
+    transition:opacity var(--dur-med) var(--ease-out),transform var(--dur-med) var(--ease-out)}
+  .theme-toggle__icon--sun{opacity:0;transform:rotate(-90deg) scale(0.4)}
+  html.theme-light .theme-toggle__icon--moon{opacity:0;transform:rotate(90deg) scale(0.4)}
+  html.theme-light .theme-toggle__icon--sun{opacity:1;transform:rotate(0) scale(1)}
+  .topbar__version{font-family:var(--font-mono);font-size:var(--fs-3xs);
+    letter-spacing:0.16em;text-transform:uppercase;color:var(--paper-60);
+    padding:var(--sp-2) var(--sp-3);border:1px solid var(--line-strong);
+    border-radius:999px;white-space:nowrap}
+  @media(max-width:480px){.topbar__version{display:none}}
+
+  /* ─── HERO ─── */
+  .hero{padding-block:var(--sp-8) var(--sp-7);position:relative}
+  .hero__meta{display:flex;align-items:center;gap:var(--sp-4);flex-wrap:wrap;
+    margin-bottom:var(--sp-6);font-family:var(--font-mono);font-size:var(--fs-3xs);
+    letter-spacing:0.16em;text-transform:uppercase;color:var(--paper-60)}
+  .hero__meta-item{display:inline-flex;align-items:center;gap:var(--sp-2)}
+  .hero__meta-item::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold)}
+  .hero__meta-sep{width:1px;height:12px;background:var(--line-strong)}
+  .hero__title{margin-bottom:var(--sp-5);max-width:18ch}
+  .hero__title .stanza{display:block}
+  .hero__lead{font-family:var(--font-display);font-size:var(--fs-xl);font-weight:400;
+    line-height:1.5;color:var(--paper-80);max-width:54ch;margin-bottom:var(--sp-6);
+    font-variation-settings:"opsz" 48,"SOFT" 60}
+  .hero__tldr{border-left:2px solid var(--gold);padding-left:var(--sp-4);
+    margin-bottom:var(--sp-6);max-width:62ch}
+  .hero__tldr .eyebrow{display:block;margin-bottom:var(--sp-2);color:var(--gold)}
+  .hero__tldr p{margin:0;font-size:var(--fs-base);color:var(--paper-80)}
+
+  .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-3);
+    margin-top:var(--sp-6);padding-top:var(--sp-6);border-top:1px solid var(--line)}
+  @media(min-width:720px){.stats{grid-template-columns:repeat(5,1fr);gap:var(--sp-5)}}
+  .stat{display:flex;flex-direction:column;gap:var(--sp-1)}
+  .stat__num{font-family:var(--font-display);font-size:clamp(1.75rem,4vw,2.5rem);
+    font-weight:700;color:var(--paper);line-height:1;letter-spacing:-0.03em;
+    font-variation-settings:"opsz" 144}
+  .stat__num--soon{color:var(--paper-40);font-style:italic;font-size:1.5rem;
+    font-variation-settings:"opsz" 144,"SOFT" 100}
+  .stat__label{font-family:var(--font-mono);font-size:var(--fs-3xs);
+    letter-spacing:0.16em;text-transform:uppercase;color:var(--paper-60);line-height:1.4}
+
+  /* ─── SECTIONS ─── */
+  .section{padding-block:var(--sp-7);border-top:1px solid var(--line);position:relative}
+  .section__header{display:flex;flex-direction:column;gap:var(--sp-3);
+    margin-bottom:var(--sp-6);max-width:72ch}
+  .section__number{font-family:var(--font-mono);font-size:var(--fs-2xs);
+    letter-spacing:0.2em;text-transform:uppercase;color:var(--gold)}
+  .section__title{font-size:var(--fs-3xl)}
+  .section__lead{font-family:var(--font-display);font-size:var(--fs-lg);
+    font-weight:400;color:var(--paper-80);max-width:62ch;line-height:1.55;
+    font-variation-settings:"opsz" 48,"SOFT" 60}
+
+  /* ─── MODULE TABS ─── */
+  .module-tabs{display:flex;gap:var(--sp-2);overflow-x:auto;padding-block:var(--sp-2);
+    margin-bottom:var(--sp-5);scrollbar-width:none;-ms-overflow-style:none}
+  .module-tabs::-webkit-scrollbar{display:none}
+  .module-tab{padding:var(--sp-3) var(--sp-4);border:1px solid var(--line-strong);
+    border-radius:999px;font-family:var(--font-mono);font-size:var(--fs-3xs);
+    letter-spacing:0.14em;text-transform:uppercase;color:var(--paper-60);
+    background:transparent;cursor:pointer;white-space:nowrap;flex-shrink:0;
+    display:inline-flex;align-items:center;gap:var(--sp-2);min-height:42px}
+  .module-tab:hover{border-color:var(--gold-line);color:var(--paper-80)}
+  .module-tab.is-active{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+  .module-tab__num{font-weight:600;opacity:0.7}
+  .module-tab__count{font-size:var(--fs-3xs);opacity:0.6;margin-left:var(--sp-1)}
+  .module-tab.is-soon{opacity:0.5;cursor:not-allowed}
+  .module-tab.is-soon:hover{border-color:var(--line-strong);color:var(--paper-60)}
+
+  /* ─── CALLOUT ─── */
+  .callout{background:var(--ink-2);border:1px solid var(--gold-line);
+    border-left:3px solid var(--gold);border-radius:var(--r-md);
+    padding:var(--sp-5);margin-block:var(--sp-6);
+    display:grid;grid-template-columns:auto 1fr;gap:var(--sp-4);align-items:start}
+  @media(min-width:720px){.callout{padding:var(--sp-6)}}
+  .callout__mark{width:40px;height:40px;border-radius:50%;
+    background:var(--gold-soft);border:1px solid var(--gold-line);
+    display:grid;place-items:center;font-family:var(--font-display);
+    font-size:18px;font-weight:700;color:var(--gold);flex-shrink:0}
+  .callout__content h4{font-family:var(--font-display);font-size:var(--fs-lg);
+    color:var(--paper);margin-bottom:var(--sp-2);font-weight:600}
+  .callout__content p{margin:0;font-size:var(--fs-sm);color:var(--paper-80);line-height:1.6}
+
+  /* ─── SEARCH + FILTERS ─── */
+  .controls{display:flex;flex-direction:column;gap:var(--sp-3);margin-bottom:var(--sp-5)}
+  .search{position:relative}
+  .search__input{width:100%;background:var(--bg-elev-soft);
+    border:1px solid var(--line-strong);border-radius:var(--r-sm);
+    padding:var(--sp-3) var(--sp-4) var(--sp-3) calc(var(--sp-4) + 22px);color:var(--paper);
+    font-family:var(--font-body);font-size:var(--fs-sm);min-height:44px;
+    transition:border-color var(--dur-fast)}
+  .search__input::placeholder{color:var(--paper-40)}
+  .search__input:focus{outline:none;border-color:var(--gold);background:var(--gold-soft)}
+  .search__icon{position:absolute;left:var(--sp-4);top:50%;
+    transform:translateY(-50%);color:var(--paper-40);pointer-events:none}
+
+  .filters{display:flex;gap:var(--sp-2);flex-wrap:wrap}
+  .filter-chip{padding:var(--sp-2) var(--sp-3);border:1px solid var(--line-strong);
+    border-radius:999px;font-family:var(--font-mono);font-size:var(--fs-3xs);
+    letter-spacing:0.12em;text-transform:uppercase;color:var(--paper-60);
+    background:transparent;cursor:pointer;display:inline-flex;align-items:center;gap:var(--sp-2);
+    min-height:34px}
+  .filter-chip:hover{border-color:var(--gold-line);color:var(--paper-80)}
+  .filter-chip.is-active{background:var(--gold-soft);border-color:var(--gold);color:var(--gold)}
+  .filter-chip__dot{width:6px;height:6px;border-radius:50%}
+  .filter-chip__dot--sage{background:var(--sage)}
+  .filter-chip__dot--amber{background:var(--amber)}
+  .filter-chip__dot--terra{background:var(--terra)}
+
+  .results-count{font-family:var(--font-mono);font-size:var(--fs-3xs);
+    letter-spacing:0.16em;text-transform:uppercase;color:var(--paper-40);
+    margin-bottom:var(--sp-4)}
+
+  /* ─── ENTRY CARDS GRID ─── */
+  .entries{display:grid;grid-template-columns:1fr;gap:var(--sp-3)}
+  @media(min-width:720px){.entries{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1080px){.entries{grid-template-columns:repeat(3,1fr)}}
+
+  .entry-card{padding:var(--sp-4) var(--sp-5);background:var(--ink-2);
+    border:1px solid var(--line);border-radius:var(--r-md);cursor:pointer;
+    text-align:left;width:100%;display:flex;flex-direction:column;gap:var(--sp-3);
+    position:relative;min-height:130px}
+  .entry-card:hover{transform:translateY(-2px);background:var(--ink-3)}
+  .entry-card--sage{border-left:3px solid var(--sage)}
+  .entry-card--amber{border-left:3px solid var(--amber)}
+  .entry-card--terra{border-left:3px solid var(--terra)}
+  .entry-card__header{display:flex;align-items:flex-start;justify-content:space-between;
+    gap:var(--sp-3)}
+  .entry-card__phrase{font-family:var(--font-display);font-size:var(--fs-xl);
+    font-weight:600;color:var(--paper);font-style:italic;line-height:1.1;
+    font-variation-settings:"opsz" 48,"SOFT" 80;flex:1;min-width:0}
+  .entry-card__freq{display:flex;gap:2px;flex-shrink:0;padding-top:6px}
+  .entry-card__freq-dot{width:5px;height:5px;border-radius:50%;background:var(--paper-40)}
+  .entry-card__freq-dot.is-active{background:var(--gold)}
+  .entry-card__ipa{font-family:var(--font-mono);font-size:var(--fs-3xs);
+    color:var(--gold);letter-spacing:0.04em}
+  .entry-card__meaning{font-size:var(--fs-sm);color:var(--paper-80);line-height:1.5;
+    flex:1;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .entry-card__footer{display:flex;align-items:center;justify-content:space-between;
+    gap:var(--sp-3);padding-top:var(--sp-2);border-top:1px solid var(--line)}
+  .entry-card__tags{display:flex;gap:var(--sp-2);flex-wrap:wrap}
+  .entry-card__tag{font-family:var(--font-mono);font-size:var(--fs-3xs);
+    letter-spacing:0.1em;color:var(--paper-40);text-transform:uppercase}
+
+  .empty-state{padding:var(--sp-8) var(--sp-4);text-align:center;color:var(--paper-40)}
+  .empty-state__icon{font-family:var(--font-display);font-size:48px;color:var(--gold);
+    opacity:0.3;margin-bottom:var(--sp-3);font-style:italic}
+  .empty-state__text{font-family:var(--font-mono);font-size:var(--fs-3xs);
+    letter-spacing:0.18em;text-transform:uppercase}
+
+  .module-soon{padding:var(--sp-8) var(--sp-5);text-align:center;
+    background:var(--ink-2);border:1px dashed var(--line-strong);border-radius:var(--r-md)}
+  .module-soon__icon{font-family:var(--font-display);font-size:64px;color:var(--gold);
+    opacity:0.4;margin-bottom:var(--sp-3);font-style:italic;line-height:1}
+  .module-soon__title{font-family:var(--font-display);font-size:var(--fs-2xl);
+    color:var(--paper);margin-bottom:var(--sp-3);font-weight:600}
+  .module-soon__text{font-size:var(--fs-sm);color:var(--paper-60);max-width:46ch;
+    margin-inline:auto;line-height:1.6}
+  .module-soon__badge{display:inline-block;margin-top:var(--sp-4);
+    padding:var(--sp-2) var(--sp-4);border:1px solid var(--gold-line);
+    background:var(--gold-soft);color:var(--gold);
+    font-family:var(--font-mono);font-size:var(--fs-3xs);letter-spacing:0.18em;
+    text-transform:uppercase;border-radius:999px}
+
+  /* ─── AUDIO BUTTON ─── */
+  .audio-btn{width:36px;height:36px;border-radius:50%;
+    border:1px solid var(--line-strong);background:var(--bg-elev-soft);
+    color:var(--paper-60);display:grid;place-items:center;cursor:pointer;
+    flex-shrink:0;transition:all var(--dur-fast)}
+  .audio-btn:hover{border-color:var(--gold);color:var(--gold);background:var(--gold-soft)}
+  .audio-btn.is-playing{border-color:var(--gold);color:var(--ink);background:var(--gold);
+    transform:scale(0.92)}
+  .audio-btn--lg{width:52px;height:52px}
+  .audio-btn--sm{width:30px;height:30px}
+  .audio-btn svg{width:14px;height:14px}
+  .audio-btn--lg svg{width:18px;height:18px}
+  .audio-btn--sm svg{width:12px;height:12px}
+
+  /* ─── MODAL ─── */
+  .modal{position:fixed;inset:0;z-index:60;display:none;
+    align-items:flex-end;justify-content:center}
+  @media(min-width:720px){.modal{align-items:center;padding:var(--sp-5)}}
+  .modal.is-open{display:flex}
+  .modal__backdrop{position:absolute;inset:0;background:var(--modal-backdrop);
+    backdrop-filter:blur(12px) saturate(120%);-webkit-backdrop-filter:blur(12px) saturate(120%);
+    animation:fadeIn var(--dur-med) var(--ease-out)}
+  .modal__panel{position:relative;background:var(--ink-2);
+    border:1px solid var(--line-strong);border-radius:var(--r-lg) var(--r-lg) 0 0;
+    width:100%;max-width:760px;max-height:92dvh;display:flex;flex-direction:column;
+    overflow:hidden;box-shadow:0 -30px 80px -20px rgba(0,0,0,0.6);
+    animation:slideUp var(--dur-med) var(--ease-out)}
+  @media(min-width:720px){.modal__panel{border-radius:var(--r-lg);max-height:88dvh;
+    box-shadow:0 40px 100px -20px rgba(0,0,0,0.7);
+    animation:scaleIn var(--dur-med) var(--ease-out)}}
+
+  @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+  @keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
+  @keyframes scaleIn{from{opacity:0;transform:scale(0.96)}to{opacity:1;transform:scale(1)}}
+
+  .modal__head{padding:var(--sp-5);border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg,rgba(201,163,92,0.06) 0%,transparent 100%)}
+  @media(min-width:720px){.modal__head{padding:var(--sp-6)}}
+  .modal__head-top{display:flex;align-items:flex-start;justify-content:space-between;
+    gap:var(--sp-4)}
+  .modal__eyebrow{font-family:var(--font-mono);font-size:var(--fs-3xs);
+    letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);
+    margin-bottom:var(--sp-3);display:flex;align-items:center;gap:var(--sp-3)}
+  .modal__eyebrow::before{content:"";width:20px;height:1px;background:var(--gold)}
+  .modal__hero{display:flex;align-items:center;gap:var(--sp-5);flex-wrap:wrap}
+  .modal__hero-text{flex:1;min-width:0}
+  .modal__phrase{font-family:var(--font-display);font-size:clamp(2rem,7vw,3rem);
+    line-height:1;font-weight:700;letter-spacing:-0.02em;color:var(--paper);
+    font-style:italic;font-variation-settings:"opsz" 144,"SOFT" 80;margin-bottom:var(--sp-2)}
+  .modal__ipa{font-family:var(--font-mono);font-size:var(--fs-sm);color:var(--gold);
+    letter-spacing:0.04em}
+  .modal__close{width:40px;height:40px;border-radius:50%;
+    border:1px solid var(--line-strong);background:transparent;color:var(--paper);
+    cursor:pointer;display:grid;place-items:center;font-size:20px;line-height:1;
+    flex-shrink:0;transition:all var(--dur-fast)}
+  .modal__close:hover{border-color:var(--gold);color:var(--gold)}
+
+  .modal__body{flex:1;overflow-y:auto;padding:var(--sp-5);background:var(--ink)}
+  @media(min-width:720px){.modal__body{padding:var(--sp-6)}}
+
+  .modal__row{display:grid;grid-template-columns:1fr;gap:var(--sp-3);margin-bottom:var(--sp-5)}
+  @media(min-width:560px){.modal__row{grid-template-columns:repeat(3,1fr)}}
+  .meta-pill{padding:var(--sp-3);background:var(--ink-2);border:1px solid var(--line);
+    border-radius:var(--r-sm);text-align:center}
+  .meta-pill__label{font-family:var(--font-mono);font-size:var(--fs-3xs);
+    letter-spacing:0.16em;text-transform:uppercase;color:var(--paper-40);
+    margin-bottom:var(--sp-2)}
+  .meta-pill__value{font-family:var(--font-display);font-size:var(--fs-sm);
+    color:var(--paper);font-weight:600;font-style:italic}
+
+  .modal__block{margin-bottom:var(--sp-6)}
+  .modal__block:last-child{margin-bottom:0}
+  .modal__block-eyebrow{font-family:var(--font-mono);font-size:var(--fs-3xs);
+    letter-spacing:0.22em;text-transform:uppercase;color:var(--paper-40);
+    margin-bottom:var(--sp-3);display:flex;align-items:center;gap:var(--sp-3)}
+  .modal__block-eyebrow::before{content:"§";color:var(--gold);font-size:14px}
+  .modal__meaning{padding:var(--sp-4);border-left:2px solid var(--gold);
+    background:var(--bg-elev-softer);font-size:var(--fs-base);color:var(--paper);
+    line-height:1.6;border-radius:0 var(--r-sm) var(--r-sm) 0;font-weight:500}
+
+  .examples{display:flex;flex-direction:column;gap:var(--sp-2)}
+  .example{display:flex;align-items:center;gap:var(--sp-3);padding:var(--sp-3) var(--sp-4);
+    background:var(--ink-2);border:1px solid var(--line);border-radius:var(--r-sm);
+    transition:all var(--dur-fast)}
+  .example:hover{border-color:var(--gold-line);background:var(--ink-3)}
+  .example__main{flex:1;min-width:0}
+  .example__en{font-family:var(--font-display);font-size:var(--fs-base);font-weight:500;
+    color:var(--paper);font-style:italic;font-variation-settings:"opsz" 48,"SOFT" 80;
+    line-height:1.4;margin-bottom:2px}
+  .example__pt{font-size:var(--fs-xs);color:var(--paper-60);line-height:1.4}
+
+  .modal__trap{padding:var(--sp-4);background:var(--terra-soft);
+    border:1px solid var(--terra-line);border-radius:var(--r-sm);
+    font-size:var(--fs-sm);color:var(--paper-80);line-height:1.6}
+  .modal__trap-icon{color:var(--terra);font-weight:700;margin-right:var(--sp-2)}
+
+  .similar-list{display:flex;flex-direction:column;gap:var(--sp-2)}
+  .similar-item{display:flex;align-items:center;gap:var(--sp-3);
+    padding:var(--sp-3) var(--sp-4);background:var(--bg-elev-softer);
+    border:1px solid var(--line);border-radius:var(--r-sm);transition:all var(--dur-fast)}
+  .similar-item:hover{border-color:var(--gold-line)}
+  .similar-item__phrase{font-family:var(--font-display);font-style:italic;
+    font-weight:600;color:var(--paper);min-width:140px;
+    font-variation-settings:"opsz" 48,"SOFT" 80}
+  .similar-item__sep{color:var(--paper-40);font-family:var(--font-mono);font-size:var(--fs-3xs)}
+  .similar-item__meaning{font-size:var(--fs-xs);color:var(--paper-60);line-height:1.4}
+
+  /* ─── FOOTER ─── */
+  .footer{padding-block:var(--sp-8) var(--sp-7);border-top:1px solid var(--line);
+    margin-top:var(--sp-8);text-align:center;position:relative}
+  .footer__mark{font-family:var(--font-display);font-size:var(--fs-2xl);
+    font-weight:900;color:var(--paper);letter-spacing:-0.03em;
+    margin-bottom:var(--sp-3);font-variation-settings:"opsz" 144}
+  .footer__mark em{font-style:italic;color:var(--gold)}
+  .footer__tagline{font-family:var(--font-mono);font-size:var(--fs-3xs);
+    letter-spacing:0.22em;text-transform:uppercase;color:var(--paper-60);
+    margin-bottom:var(--sp-2)}
+  .footer__meta{font-family:var(--font-body);font-size:var(--fs-xs);
+    color:var(--paper-40);max-width:48ch;margin-inline:auto;line-height:1.6}
+  .footer__divider{width:60px;height:1px;background:var(--gold);margin:var(--sp-5) auto}
+
+  .modal__body::-webkit-scrollbar{width:6px}
+  .modal__body::-webkit-scrollbar-track{background:transparent}
+  .modal__body::-webkit-scrollbar-thumb{background:var(--line-strong);border-radius:999px}
+  .modal__body::-webkit-scrollbar-thumb:hover{background:var(--gold-line)}
+
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation-duration:0.01ms !important;transition-duration:0.01ms !important}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="wrap topbar__inner">
+    <div class="brand">
+      <div class="brand__mark">VS</div>
+      <div class="brand__text">
+        <div class="brand__kicker">VS Consulting</div>
+        <div class="brand__name">Linguistic Lab</div>
+      </div>
+    </div>
+    <div class="topbar__actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema" title="Alternar tema">
+        <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+      </button>
+      <div class="topbar__version">v1.0 · Connectors</div>
+    </div>
+  </div>
+</header>
+
+<section class="hero wrap">
+  <div class="hero__meta">
+    <span class="hero__meta-item">English Connectors</span>
+    <span class="hero__meta-sep"></span>
+    <span>Edição · MMXXVI</span>
+    <span class="hero__meta-sep"></span>
+    <span>Frequência COCA</span>
+  </div>
+  <h1 class="hero__title">
+    <span class="stanza">A arquitetura</span>
+    <span class="stanza"><em>conectiva</em> do</span>
+    <span class="stanza">inglês.</span>
+  </h1>
+  <p class="hero__lead">
+    Um framework editorial para dominar os elementos que articulam o inglês intermediário-avançado —
+    phrasal verbs, advérbios, conjunções, linking words e collocations. Curado por frequência real (COCA).
+  </p>
+  <div class="hero__tldr">
+    <span class="eyebrow">O que você encontra</span>
+    <p>
+      Cada entrada vem com IPA, áudio integrado, três exemplos contextualizados, tradução,
+      <em>armadilha BR</em> (erros típicos do brasileiro) e sinônimos contrastivos. Aprendizado
+      construído sobre dados reais de uso.
+    </p>
+  </div>
+  <div class="stats" id="stats"></div>
+</section>
+
+<section class="section wrap">
+  <div class="section__header">
+    <span class="section__number">§ 01 · Metodologia</span>
+    <h2 class="section__title">Cinco <em>módulos</em>, frequência real</h2>
+    <p class="section__lead">
+      Diferente de listas didáticas que ensinam o que é fácil de ensinar, este framework é guiado por dados
+      do <em>Corpus of Contemporary American English (COCA)</em> — selecionando o que é realmente usado.
+    </p>
+  </div>
+  <div class="callout">
+    <div class="callout__mark">§</div>
+    <div class="callout__content">
+      <h4>Sistema cromático tripartite</h4>
+      <p>
+        <span style="color:var(--sage)">●</span> <strong>Sage</strong>: alta frequência, fácil para brasileiros.
+        <span style="color:var(--amber)">●</span> <strong>Amber</strong>: frequência média, requer atenção.
+        <span style="color:var(--terra)">●</span> <strong>Terra</strong>: idiomáticos críticos / armadilhas.
+        Foque inicialmente nos amber e terra — são onde brasileiros mais erram.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap">
+  <div class="section__header">
+    <span class="section__number">§ 02 · Inventário</span>
+    <h2 class="section__title">Os <em>cinco módulos</em></h2>
+  </div>
+
+  <div class="module-tabs" id="module-tabs"></div>
+
+  <div id="module-content"></div>
+</section>
+
+<footer class="footer wrap">
+  <div class="footer__mark">VS <em>Consulting</em></div>
+  <div class="footer__divider"></div>
+  <div class="footer__tagline">Linguistic Lab · Connectors Edition</div>
+  <p class="footer__meta">
+    English Connectors & Compounds · Versão 1.0 (Fase A) · MMXXVI<br>
+    Phase A: Phrasal Verbs · Adverbs, Conjunctions, Linking Words, Collocations em breve.
+  </p>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__panel">
+    <header class="modal__head">
+      <div class="modal__head-top">
+        <div style="flex:1;min-width:0">
+          <div class="modal__eyebrow" id="modal-eyebrow">—</div>
+          <div class="modal__hero">
+            <button class="audio-btn audio-btn--lg" id="modal-audio" aria-label="Tocar áudio">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            </button>
+            <div class="modal__hero-text">
+              <div class="modal__phrase" id="modal-phrase">—</div>
+              <div class="modal__ipa" id="modal-ipa">—</div>
+            </div>
+          </div>
+        </div>
+        <button class="modal__close" data-close aria-label="Fechar">×</button>
+      </div>
+    </header>
+    <div class="modal__body" id="modal-body"></div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script>
+const ICON_VOLUME = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>`;
+
+// ═══════════════════════════════════════════════════════════════
+//   ESTADO
+// ═══════════════════════════════════════════════════════════════
+let state = {
+  module: 'phrasal',
+  search: '',
+  cls: 'all',
+  register: 'all'
+};
+
+// ═══════════════════════════════════════════════════════════════
+//   TTS
+// ═══════════════════════════════════════════════════════════════
+function speak(text, rate = 0.85) {
+  if (!('speechSynthesis' in window)) return;
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'en-US';
+  u.rate = rate;
+  u.pitch = 1.0;
+  window.speechSynthesis.speak(u);
+}
+function attachAudio(btn, text) {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    btn.classList.add('is-playing');
+    speak(text);
+    setTimeout(() => btn.classList.remove('is-playing'), 700);
+  });
+}
+
+// ═══════════════════════════════════════════════════════════════
+//   STATS
+// ═══════════════════════════════════════════════════════════════
+function renderStats() {
+  const el = document.getElementById('stats');
+  el.innerHTML = MODULES.map(m => {
+    const count = m.data.length;
+    const isReady = m.status === 'ready';
+    return `
+      <div class="stat">
+        <div class="stat__num ${isReady ? '' : 'stat__num--soon'}">${isReady ? count : 'soon'}</div>
+        <div class="stat__label">${m.label}</div>
+      </div>
+    `;
+  }).join('');
+}
+
+// ═══════════════════════════════════════════════════════════════
+//   MODULE TABS
+// ═══════════════════════════════════════════════════════════════
+function renderModuleTabs() {
+  const el = document.getElementById('module-tabs');
+  el.innerHTML = MODULES.map(m => {
+    const isActive = state.module === m.id;
+    const isReady = m.status === 'ready';
+    const count = isReady ? m.data.length : `soon`;
+    return `
+      <button class="module-tab ${isActive ? 'is-active' : ''} ${!isReady ? 'is-soon' : ''}"
+              data-module="${m.id}" ${!isReady ? 'disabled' : ''}>
+        <span class="module-tab__num">${m.num}</span>
+        <span>${m.label}</span>
+        <span class="module-tab__count">${count}</span>
+      </button>
+    `;
+  }).join('');
+  el.querySelectorAll('.module-tab').forEach(btn => {
+    if (btn.disabled) return;
+    btn.addEventListener('click', () => {
+      state.module = btn.dataset.module;
+      state.search = '';
+      state.cls = 'all';
+      state.register = 'all';
+      renderModuleTabs();
+      renderModuleContent();
+    });
+  });
+}
+
+// ═══════════════════════════════════════════════════════════════
+//   MODULE CONTENT
+// ═══════════════════════════════════════════════════════════════
+function renderModuleContent() {
+  const m = MODULES.find(m => m.id === state.module);
+  const el = document.getElementById('module-content');
+
+  if (m.status === 'soon') {
+    el.innerHTML = `
+      <div class="module-soon">
+        <div class="module-soon__icon">§</div>
+        <h3 class="module-soon__title">Em breve · ${m.label}</h3>
+        <p class="module-soon__text">
+          Este módulo está sendo curado. <strong>Aproximadamente ${m.expected} entradas</strong> serão
+          adicionadas em fase futura, mantendo o mesmo padrão editorial: IPA, áudio, exemplos com tradução,
+          armadilha BR e sinônimos contrastivos.
+        </p>
+        <div class="module-soon__badge">Próxima fase</div>
+      </div>
+    `;
+    return;
+  }
+
+  el.innerHTML = `
+    <div class="controls">
+      <div class="search">
+        <svg class="search__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="text" id="search-input" class="search__input"
+               placeholder="Buscar por palavra, significado, exemplo..." value="${state.search}">
+      </div>
+      <div class="filters">
+        <button class="filter-chip ${state.cls === 'all' ? 'is-active' : ''}" data-cls="all">Todos</button>
+        <button class="filter-chip ${state.cls === 'sage' ? 'is-active' : ''}" data-cls="sage">
+          <span class="filter-chip__dot filter-chip__dot--sage"></span>Alta freq.
+        </button>
+        <button class="filter-chip ${state.cls === 'amber' ? 'is-active' : ''}" data-cls="amber">
+          <span class="filter-chip__dot filter-chip__dot--amber"></span>Atenção
+        </button>
+        <button class="filter-chip ${state.cls === 'terra' ? 'is-active' : ''}" data-cls="terra">
+          <span class="filter-chip__dot filter-chip__dot--terra"></span>Crítico
+        </button>
+        <button class="filter-chip ${state.register === 'formal' ? 'is-active' : ''}" data-register="formal">Formal</button>
+        <button class="filter-chip ${state.register === 'informal' ? 'is-active' : ''}" data-register="informal">Informal</button>
+      </div>
+      <div class="results-count" id="results-count">—</div>
+    </div>
+    <div class="entries" id="entries"></div>
+  `;
+
+  // Listeners
+  const searchInput = document.getElementById('search-input');
+  let searchTimer;
+  searchInput.addEventListener('input', (e) => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => {
+      state.search = e.target.value.toLowerCase().trim();
+      renderEntries();
+    }, 200);
+  });
+
+  document.querySelectorAll('.filter-chip[data-cls]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state.cls = btn.dataset.cls;
+      renderModuleContent();
+    });
+  });
+  document.querySelectorAll('.filter-chip[data-register]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state.register = state.register === btn.dataset.register ? 'all' : btn.dataset.register;
+      renderModuleContent();
+    });
+  });
+
+  renderEntries();
+}
+
+// ═══════════════════════════════════════════════════════════════
+//   ENTRIES
+// ═══════════════════════════════════════════════════════════════
+function getFilteredEntries() {
+  const m = MODULES.find(m => m.id === state.module);
+  return m.data.filter(entry => {
+    if (state.cls !== 'all' && entry.cls !== state.cls) return false;
+    if (state.register !== 'all' && entry.register !== state.register) return false;
+    if (state.search) {
+      const q = state.search;
+      const haystack = [
+        entry.phrase || entry.word,
+        entry.meaning,
+        entry.ipa,
+        ...(entry.ex || []).flatMap(e => [e.en, e.pt])
+      ].join(' ').toLowerCase();
+      if (!haystack.includes(q)) return false;
+    }
+    return true;
+  });
+}
+
+function renderEntries() {
+  const entries = getFilteredEntries();
+  const el = document.getElementById('entries');
+  const countEl = document.getElementById('results-count');
+
+  if (countEl) {
+    countEl.textContent = `${entries.length} de ${MODULES.find(m => m.id === state.module).data.length} entradas`;
+  }
+
+  if (entries.length === 0) {
+    el.innerHTML = `
+      <div class="empty-state" style="grid-column:1/-1">
+        <div class="empty-state__icon">§</div>
+        <div class="empty-state__text">Nenhuma entrada corresponde aos filtros</div>
+      </div>
+    `;
+    return;
+  }
+
+  el.innerHTML = entries.map(entry => buildCard(entry)).join('');
+  el.querySelectorAll('.entry-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const id = card.dataset.id;
+      const entry = entries.find(e => e.id === id);
+      openModal(entry);
+    });
+  });
+}
+
+function buildCard(entry) {
+  const phrase = entry.phrase || entry.word;
+  const freqDots = Array.from({length:5}, (_,i) => i < entry.freq).map(active =>
+    `<span class="entry-card__freq-dot ${active ? 'is-active' : ''}"></span>`
+  ).join('');
+  const tags = [];
+  if (entry.separable === true) tags.push('separable');
+  if (entry.separable === false) tags.push('inseparable');
+  if (entry.register && entry.register !== 'neutral') tags.push(entry.register);
+  return `
+    <button class="entry-card entry-card--${entry.cls}" data-id="${entry.id}">
+      <div class="entry-card__header">
+        <div style="flex:1;min-width:0">
+          <div class="entry-card__phrase">${phrase}</div>
+          <div class="entry-card__ipa">/${entry.ipa}/</div>
+        </div>
+        <div class="entry-card__freq" title="Frequência: ${entry.freq}/5">${freqDots}</div>
+      </div>
+      <div class="entry-card__meaning">${entry.meaning}</div>
+      <div class="entry-card__footer">
+        <div class="entry-card__tags">
+          ${tags.map(t => `<span class="entry-card__tag">${t}</span>`).join('')}
+        </div>
+      </div>
+    </button>
+  `;
+}
+
+// ═══════════════════════════════════════════════════════════════
+//   MODAL
+// ═══════════════════════════════════════════════════════════════
+const modal = document.getElementById('modal');
+const modalEyebrow = document.getElementById('modal-eyebrow');
+const modalPhrase = document.getElementById('modal-phrase');
+const modalIpa = document.getElementById('modal-ipa');
+const modalAudio = document.getElementById('modal-audio');
+const modalBody = document.getElementById('modal-body');
+
+let currentAudioWord = null;
+modalAudio.addEventListener('click', () => {
+  if (!currentAudioWord) return;
+  modalAudio.classList.add('is-playing');
+  speak(currentAudioWord);
+  setTimeout(() => modalAudio.classList.remove('is-playing'), 800);
+});
+
+function openModal(entry) {
+  const phrase = entry.phrase || entry.word;
+  currentAudioWord = phrase;
+  modalEyebrow.textContent = `${MODULES.find(m => m.id === state.module).label} · ${CLS_CONFIG[entry.cls].label}`;
+  modalPhrase.textContent = phrase;
+  modalIpa.textContent = `/${entry.ipa}/`;
+
+  let html = '';
+
+  // Meta
+  const metaItems = [];
+  metaItems.push({label:'Frequência', value:`★ ${entry.freq}/5`});
+  if (entry.separable !== undefined) {
+    metaItems.push({label:'Separável', value: entry.separable ? 'Sim' : 'Não'});
+  }
+  if (entry.register) {
+    const regLabels = {neutral:'Neutro', formal:'Formal', informal:'Informal'};
+    metaItems.push({label:'Registro', value: regLabels[entry.register] || entry.register});
+  }
+  html += `<div class="modal__row">${metaItems.map(m => `
+    <div class="meta-pill">
+      <div class="meta-pill__label">${m.label}</div>
+      <div class="meta-pill__value">${m.value}</div>
+    </div>
+  `).join('')}</div>`;
+
+  // Significado
+  html += `
+    <div class="modal__block">
+      <div class="modal__block-eyebrow">Significado</div>
+      <div class="modal__meaning">${entry.meaning}</div>
+    </div>
+  `;
+
+  // Exemplos
+  if (entry.ex && entry.ex.length) {
+    html += `
+      <div class="modal__block">
+        <div class="modal__block-eyebrow">Exemplos · ${entry.ex.length} contextos</div>
+        <div class="examples">
+          ${entry.ex.map(ex => `
+            <div class="example">
+              <div class="example__main">
+                <div class="example__en">${ex.en}</div>
+                <div class="example__pt">${ex.pt}</div>
+              </div>
+              <button class="audio-btn audio-btn--sm" data-audio="${ex.en.replace(/"/g, '&quot;')}" aria-label="Tocar exemplo">${ICON_VOLUME}</button>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }
+
+  // Armadilha BR
+  if (entry.trap) {
+    html += `
+      <div class="modal__block">
+        <div class="modal__block-eyebrow" style="color:var(--terra)">⚠ Armadilha BR</div>
+        <div class="modal__trap">${entry.trap}</div>
+      </div>
+    `;
+  }
+
+  // Sinônimos
+  if (entry.similar && entry.similar.length) {
+    html += `
+      <div class="modal__block">
+        <div class="modal__block-eyebrow">Veja também · contraste</div>
+        <div class="similar-list">
+          ${entry.similar.map(s => `
+            <div class="similar-item">
+              <button class="audio-btn audio-btn--sm" data-audio="${(s.phrase || s.word).replace(/"/g, '&quot;')}" aria-label="Tocar">${ICON_VOLUME}</button>
+              <div class="similar-item__phrase">${s.phrase || s.word}</div>
+              <div class="similar-item__sep">→</div>
+              <div class="similar-item__meaning">${s.meaning}</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }
+
+  modalBody.innerHTML = html;
+  modalBody.querySelectorAll('[data-audio]').forEach(btn => {
+    attachAudio(btn, btn.getAttribute('data-audio'));
+  });
+
+  modal.classList.add('is-open');
+  document.body.style.overflow = 'hidden';
+  modalBody.scrollTop = 0;
+}
+
+function closeModal() {
+  modal.classList.remove('is-open');
+  document.body.style.overflow = '';
+  if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+}
+
+modal.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeModal));
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+});
+
+// ═══════════════════════════════════════════════════════════════
+//   THEME TOGGLE
+// ═══════════════════════════════════════════════════════════════
+const themeToggle = document.getElementById('theme-toggle');
+const htmlEl = document.documentElement;
+const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+
+function setTheme(theme) {
+  if (theme === 'light') {
+    htmlEl.classList.add('theme-light');
+    themeColorMeta?.setAttribute('content', '#F5F1E8');
+  } else {
+    htmlEl.classList.remove('theme-light');
+    themeColorMeta?.setAttribute('content', '#0A1220');
+  }
+  try { localStorage.setItem('connectors-theme', theme); } catch(e) {}
+}
+
+if (htmlEl.classList.contains('theme-light')) {
+  themeColorMeta?.setAttribute('content', '#F5F1E8');
+}
+
+themeToggle.addEventListener('click', () => {
+  const isLight = htmlEl.classList.contains('theme-light');
+  setTheme(isLight ? 'dark' : 'light');
+});
+
+// ═══════════════════════════════════════════════════════════════
+//   PROGRESS
+// ═══════════════════════════════════════════════════════════════
+const progress = document.getElementById('progress');
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  const scrolled = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+  progress.style.width = scrolled + '%';
+}, { passive: true });
+
+// ═══════════════════════════════════════════════════════════════
+//   INIT
+// ═══════════════════════════════════════════════════════════════
+renderStats();
+renderModuleTabs();
+renderModuleContent();
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch(() => {});
+  });
+}
+</script>
+</body>
+</html>
