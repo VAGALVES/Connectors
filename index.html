@@ -498,7 +498,7 @@
           <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
         </svg>
       </button>
-      <div class="topbar__version">v1.0 · Connectors</div>
+      <div class="topbar__version">v1.1 · Connectors</div>
     </div>
   </div>
 </header>
@@ -570,8 +570,8 @@
   <div class="footer__divider"></div>
   <div class="footer__tagline">Linguistic Lab · Connectors Edition</div>
   <p class="footer__meta">
-    English Connectors & Compounds · Versão 1.0 (Fase A) · MMXXVI<br>
-    Phase A: Phrasal Verbs · Adverbs, Conjunctions, Linking Words, Collocations em breve.
+    English Connectors & Compounds · Versão 1.1 (Fases A + B) · MMXXVI<br>
+    102 phrasal verbs · 80 adverbs · Conjunctions, Linking Words e Collocations em breve.
   </p>
 </footer>
 
@@ -610,7 +610,24 @@ let state = {
   module: 'phrasal',
   search: '',
   cls: 'all',
-  register: 'all'
+  register: 'all',
+  category: 'all'
+};
+
+// Labels e ordem das categorias por módulo
+const CATEGORY_CONFIG = {
+  adverbs: {
+    label: 'Categoria',
+    order: ['frequency', 'manner', 'time', 'place', 'degree', 'certainty'],
+    labels: {
+      frequency: 'Frequência',
+      manner: 'Modo',
+      time: 'Tempo',
+      place: 'Lugar',
+      degree: 'Grau',
+      certainty: 'Certeza / Foco'
+    }
+  }
 };
 
 // ═══════════════════════════════════════════════════════════════
@@ -676,6 +693,7 @@ function renderModuleTabs() {
       state.search = '';
       state.cls = 'all';
       state.register = 'all';
+      state.category = 'all';
       renderModuleTabs();
       renderModuleContent();
     });
@@ -705,6 +723,16 @@ function renderModuleContent() {
     return;
   }
 
+  const catConfig = CATEGORY_CONFIG[state.module];
+  const categoryFilters = catConfig ? `
+      <div class="filters" style="margin-top:var(--sp-1)">
+        <button class="filter-chip ${state.category === 'all' ? 'is-active' : ''}" data-category="all">${catConfig.label}: Todas</button>
+        ${catConfig.order.map(cat => `
+          <button class="filter-chip ${state.category === cat ? 'is-active' : ''}" data-category="${cat}">${catConfig.labels[cat]}</button>
+        `).join('')}
+      </div>
+  ` : '';
+
   el.innerHTML = `
     <div class="controls">
       <div class="search">
@@ -729,6 +757,7 @@ function renderModuleContent() {
         <button class="filter-chip ${state.register === 'formal' ? 'is-active' : ''}" data-register="formal">Formal</button>
         <button class="filter-chip ${state.register === 'informal' ? 'is-active' : ''}" data-register="informal">Informal</button>
       </div>
+      ${categoryFilters}
       <div class="results-count" id="results-count">—</div>
     </div>
     <div class="entries" id="entries"></div>
@@ -757,6 +786,12 @@ function renderModuleContent() {
       renderModuleContent();
     });
   });
+  document.querySelectorAll('.filter-chip[data-category]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state.category = btn.dataset.category;
+      renderModuleContent();
+    });
+  });
 
   renderEntries();
 }
@@ -769,6 +804,7 @@ function getFilteredEntries() {
   return m.data.filter(entry => {
     if (state.cls !== 'all' && entry.cls !== state.cls) return false;
     if (state.register !== 'all' && entry.register !== state.register) return false;
+    if (state.category !== 'all' && entry.category !== state.category) return false;
     if (state.search) {
       const q = state.search;
       const haystack = [
@@ -820,6 +856,10 @@ function buildCard(entry) {
   const tags = [];
   if (entry.separable === true) tags.push('separable');
   if (entry.separable === false) tags.push('inseparable');
+  if (entry.category) {
+    const catLabel = CATEGORY_CONFIG[state.module]?.labels[entry.category] || entry.category;
+    tags.push(catLabel.toLowerCase());
+  }
   if (entry.register && entry.register !== 'neutral') tags.push(entry.register);
   return `
     <button class="entry-card entry-card--${entry.cls}" data-id="${entry.id}">
@@ -873,6 +913,10 @@ function openModal(entry) {
   if (entry.separable !== undefined) {
     metaItems.push({label:'Separável', value: entry.separable ? 'Sim' : 'Não'});
   }
+  if (entry.category) {
+    const catLabel = CATEGORY_CONFIG[state.module]?.labels[entry.category] || entry.category;
+    metaItems.push({label:'Categoria', value: catLabel});
+  }
   if (entry.register) {
     const regLabels = {neutral:'Neutro', formal:'Formal', informal:'Informal'};
     metaItems.push({label:'Registro', value: regLabels[entry.register] || entry.register});
@@ -883,6 +927,16 @@ function openModal(entry) {
       <div class="meta-pill__value">${m.value}</div>
     </div>
   `).join('')}</div>`;
+
+  // Posição (apenas para advérbios)
+  if (entry.position) {
+    html += `
+      <div class="modal__block">
+        <div class="modal__block-eyebrow">Posição na frase</div>
+        <div class="modal__meaning" style="font-size:var(--fs-sm);font-weight:400;color:var(--paper-80)">${entry.position}</div>
+      </div>
+    `;
+  }
 
   // Significado
   html += `
