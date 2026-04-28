@@ -498,7 +498,7 @@
           <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
         </svg>
       </button>
-      <div class="topbar__version">v1.1 · Connectors</div>
+      <div class="topbar__version">v1.2 · Connectors</div>
     </div>
   </div>
 </header>
@@ -570,8 +570,8 @@
   <div class="footer__divider"></div>
   <div class="footer__tagline">Linguistic Lab · Connectors Edition</div>
   <p class="footer__meta">
-    English Connectors & Compounds · Versão 1.1 (Fases A + B) · MMXXVI<br>
-    102 phrasal verbs · 80 adverbs · Conjunctions, Linking Words e Collocations em breve.
+    English Connectors & Compounds · Versão 1.2 (Fases A + B + C + D) · MMXXVI<br>
+    102 phrasal verbs · 80 adverbs · 40 conjunctions · 50 linking words · Collocations em breve.
   </p>
 </footer>
 
@@ -626,6 +626,32 @@ const CATEGORY_CONFIG = {
       place: 'Lugar',
       degree: 'Grau',
       certainty: 'Certeza / Foco'
+    }
+  },
+  conjunctions: {
+    label: 'Tipo',
+    order: ['coordinating', 'subord-cause', 'subord-time', 'subord-condition', 'subord-concession', 'subord-purpose', 'correlative'],
+    labels: {
+      'coordinating': 'Coordenativa',
+      'subord-cause': 'Causa',
+      'subord-time': 'Tempo',
+      'subord-condition': 'Condição',
+      'subord-concession': 'Concessão',
+      'subord-purpose': 'Finalidade',
+      'correlative': 'Correlativa'
+    }
+  },
+  linking: {
+    label: 'Função',
+    order: ['addition', 'contrast', 'consequence', 'exemplification', 'sequence', 'conclusion', 'reformulation'],
+    labels: {
+      addition: 'Adição',
+      contrast: 'Contraste',
+      consequence: 'Consequência',
+      exemplification: 'Exemplo',
+      sequence: 'Sequência',
+      conclusion: 'Conclusão',
+      reformulation: 'Reformulação'
     }
   }
 };
