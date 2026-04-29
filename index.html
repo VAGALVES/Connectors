@@ -211,7 +211,8 @@
 
   .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-3);
     margin-top:var(--sp-6);padding-top:var(--sp-6);border-top:1px solid var(--line)}
-  @media(min-width:720px){.stats{grid-template-columns:repeat(5,1fr);gap:var(--sp-5)}}
+  @media(min-width:720px){.stats{grid-template-columns:repeat(3,1fr);gap:var(--sp-5)}}
+  @media(min-width:1080px){.stats{grid-template-columns:repeat(6,1fr)}}
   .stat{display:flex;flex-direction:column;gap:var(--sp-1)}
   .stat__num{font-family:var(--font-display);font-size:clamp(1.75rem,4vw,2.5rem);
     font-weight:700;color:var(--paper);line-height:1;letter-spacing:-0.03em;
@@ -498,7 +499,7 @@
           <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
         </svg>
       </button>
-      <div class="topbar__version">v1.3 · Connectors</div>
+      <div class="topbar__version">v1.4 · Connectors</div>
     </div>
   </div>
 </header>
@@ -534,7 +535,7 @@
 <section class="section wrap">
   <div class="section__header">
     <span class="section__number">§ 01 · Metodologia</span>
-    <h2 class="section__title">Cinco <em>módulos</em>, frequência real</h2>
+    <h2 class="section__title">Seis <em>módulos</em>, frequência real</h2>
     <p class="section__lead">
       Diferente de listas didáticas que ensinam o que é fácil de ensinar, este framework é guiado por dados
       do <em>Corpus of Contemporary American English (COCA)</em> — selecionando o que é realmente usado.
@@ -557,7 +558,7 @@
 <section class="section wrap">
   <div class="section__header">
     <span class="section__number">§ 02 · Inventário</span>
-    <h2 class="section__title">Os <em>cinco módulos</em></h2>
+    <h2 class="section__title">Os <em>seis módulos</em></h2>
   </div>
 
   <div class="module-tabs" id="module-tabs"></div>
@@ -570,9 +571,9 @@
   <div class="footer__divider"></div>
   <div class="footer__tagline">Linguistic Lab · Connectors Edition</div>
   <p class="footer__meta">
-    English Connectors & Compounds · Versão 1.3 · MMXXVI<br>
-    102 phrasal verbs · 80 adverbs · 40 conjunctions · 50 linking words · 100 collocations<br>
-    372 entradas curadas · Framework completo.
+    English Connectors & Compounds · Versão 1.4 · MMXXVI<br>
+    102 phrasal verbs · 80 adverbs · 40 conjunctions · 50 linking words · 100 collocations · 80 prepositions<br>
+    452 entradas curadas · Framework expandido.
   </p>
 </footer>
 
@@ -664,6 +665,18 @@ const CATEGORY_CONFIG = {
       'adv-adj': 'Adv. + Adj.',
       'verb-adv': 'Verbo + Adv.',
       'noun-noun': 'Subst. + Subst.'
+    }
+  },
+  prepositions: {
+    label: 'Grupo',
+    order: ['time', 'place', 'movement', 'verb-prep', 'adj-prep', 'noun-prep'],
+    labels: {
+      time: 'Tempo',
+      place: 'Lugar',
+      movement: 'Movimento',
+      'verb-prep': 'Verbo + Prep.',
+      'adj-prep': 'Adj. + Prep.',
+      'noun-prep': 'Subst. + Prep.'
     }
   }
 };
@@ -972,6 +985,16 @@ function openModal(entry) {
       <div class="modal__block">
         <div class="modal__block-eyebrow">Posição na frase</div>
         <div class="modal__meaning" style="font-size:var(--fs-sm);font-weight:400;color:var(--paper-80)">${entry.position}</div>
+      </div>
+    `;
+  }
+
+  // Estrutura / Combinação (apenas para preposições)
+  if (entry.structure) {
+    html += `
+      <div class="modal__block">
+        <div class="modal__block-eyebrow">Estrutura · combinação</div>
+        <div class="modal__meaning" style="font-family:var(--font-mono);font-size:var(--fs-sm);font-weight:400;color:var(--gold);border-left-color:var(--gold)">${entry.structure}</div>
       </div>
     `;
   }

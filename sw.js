@@ -1,4 +1,4 @@
-const CACHE_NAME = 'connectors-vs-v1.3.0';
+const CACHE_NAME = 'connectors-vs-v1.4.0';
 const ASSETS = [
   './', './index.html', './data.js', './manifest.json',
   './icon-192.png', './icon-512.png', './apple-touch-icon.png',
